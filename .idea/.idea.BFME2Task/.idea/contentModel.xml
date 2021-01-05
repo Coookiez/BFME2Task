@@ -48982,9 +48982,8 @@
       <e p="UE4Editor.Target.cs" t="Include" />
       <e p="UE4Game.Target.cs" t="Include" />
     </e>
-    <e p="C:\Users\kuba\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\kuba\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_BFME2Task.1760867223.00" t="ExcludeRecursive" />
-    <e p="C:\Users\kuba\Documents\Unreal Projects\BFME2Task" t="IncludeFlat">
+    <e p="C:\Unreal Projects\BFME2Task" t="IncludeFlat">
+      <e p=".gitignore" t="Include" />
       <e p="BFME2Task.sln" t="IncludeFlat" />
       <e p="BFME2Task.uproject" t="Include" />
       <e p="Config" t="Include">
@@ -49021,5 +49020,7 @@
       </e>
       <e p="Visualizers" t="Include" />
     </e>
+    <e p="C:\Users\kuba\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\kuba\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_BFME2Task.-1283487498.00" t="ExcludeRecursive" />
   </component>
 </project>
