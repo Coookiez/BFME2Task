@@ -16,4 +16,9 @@ class BFME2TASK_API UIconWidget : public UUserWidget
 
 public:
 	virtual bool Initialize() override;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class UUserWidget> IconClass;
+	UPROPERTY(EditAnywhere)
+	UUserWidget* Icon;
 };

@@ -12,11 +12,6 @@ ALumberMill::ALumberMill()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	IconWidget = NewObject<UIconWidget>();
-	UE_LOG(LogTemp, Warning, TEXT("constructor") );
-	IconWidget->Initialize();
-	if (IconWidget != nullptr)
-		UE_LOG(LogTemp, Warning, TEXT("IconWidget is not null - constructor") );
 }
 
 // Called when the game starts or when spawned

@@ -6,15 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="036c2a54-ee21-4f48-a598-01e3f93b9d21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_Icon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BFME2Task.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/BFME2Task.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/BFME2Task.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/BFME2Task.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +23,8 @@
       <option value="$PROJECT_DIR$/Source/BFME2Task/BFME2TaskPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/BFME2Task.Build.cs" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" />
-      <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/IconWidget.cpp" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" />
     </changedPaths>
   </component>
@@ -375,7 +368,7 @@
       <workItem from="1609716408433" duration="981000" />
       <workItem from="1609860990847" duration="851000" />
       <workItem from="1609876731595" duration="338000" />
-      <workItem from="1609877084681" duration="476000" />
+      <workItem from="1609877084681" duration="809000" />
     </task>
     <servers />
   </component>
