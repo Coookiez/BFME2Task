@@ -7,6 +7,9 @@ bool UIconWidget::Initialize()
 {
 	Icon = CreateWidget(this, IconClass);
 	if (Icon != nullptr)
+	{
 		Icon->AddToViewport();
+		UE_LOG(LogTemp, Warning, TEXT("Icon widget is not null") );
+	}
 	return true;
 }
