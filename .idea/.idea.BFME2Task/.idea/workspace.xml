@@ -6,8 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="036c2a54-ee21-4f48-a598-01e3f93b9d21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_IconWidget.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +368,7 @@
       <workItem from="1609716408433" duration="981000" />
       <workItem from="1609860990847" duration="851000" />
       <workItem from="1609876731595" duration="338000" />
-      <workItem from="1609877084681" duration="809000" />
+      <workItem from="1609877084681" duration="1475000" />
     </task>
     <servers />
   </component>

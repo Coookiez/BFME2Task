@@ -5,5 +5,8 @@
 
 bool UIconWidget::Initialize()
 {
+	Icon = CreateWidget(this, IconClass);
+	if (Icon != nullptr)
+		Icon->AddToViewport();
 	return true;
 }
