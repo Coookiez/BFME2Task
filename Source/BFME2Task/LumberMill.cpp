@@ -2,22 +2,31 @@
 
 
 #include "LumberMill.h"
+#include "IconWidget.h"
 
 #include <iostream>
+
 
 // Sets default values
 ALumberMill::ALumberMill()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	IconWidget = NewObject<UIconWidget>();
+	UE_LOG(LogTemp, Warning, TEXT("constructor") );
+	IconWidget->Initialize();
+	if (IconWidget != nullptr)
+		UE_LOG(LogTemp, Warning, TEXT("IconWidget is not null - constructor") );
 }
 
 // Called when the game starts or when spawned
 void ALumberMill::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Warning, TEXT("XDDDDD CYLINDER") );
+	IconWidget = NewObject<UIconWidget>();
+	IconWidget->Initialize();
+	if (IconWidget != nullptr)
+		UE_LOG(LogTemp, Warning, TEXT("IconWidget is not null - beginplay") );
 }
 
 // Called every frame
@@ -26,4 +35,3 @@ void ALumberMill::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-

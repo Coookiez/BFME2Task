@@ -49012,6 +49012,8 @@
           <e p="BFME2TaskGameMode.h" t="Include" />
           <e p="BFME2TaskPlayerController.cpp" t="Include" />
           <e p="BFME2TaskPlayerController.h" t="Include" />
+          <e p="IconWidget.cpp" t="Include" />
+          <e p="IconWidget.h" t="Include" />
           <e p="LumberMill.cpp" t="Include" />
           <e p="LumberMill.h" t="Include" />
         </e>
