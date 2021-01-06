@@ -18,10 +18,12 @@ ALumberMill::ALumberMill()
 void ALumberMill::BeginPlay()
 {
 	Super::BeginPlay();
-	IconWidget = NewObject<UIconWidget>();
-	IconWidget->Initialize();
-	if (IconWidget != nullptr)
-		UE_LOG(LogTemp, Warning, TEXT("IconWidget is not null - beginplay") );
+	UIComponent = FindComponentByClass<UUIComponent>();
+	if (UIComponent != nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Nie null") );
+		UIComponent->AddUIToViewport();
+	}
 }
 
 // Called every frame

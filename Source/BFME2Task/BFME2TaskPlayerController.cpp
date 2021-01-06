@@ -6,6 +6,7 @@
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "BFME2TaskCharacter.h"
 #include "DrawDebugHelpers.h"
+#include "LumberMill.h"
 #include "Engine/World.h"
 
 ABFME2TaskPlayerController::ABFME2TaskPlayerController()
@@ -13,6 +14,7 @@ ABFME2TaskPlayerController::ABFME2TaskPlayerController()
 	bShowMouseCursor = true;
 	DefaultMouseCursor = EMouseCursor::Crosshairs;
 	PlayerController = this;
+	bEnableClickEvents = true;
 }
 
 void ABFME2TaskPlayerController::PlayerTick(float DeltaTime)
@@ -22,7 +24,7 @@ void ABFME2TaskPlayerController::PlayerTick(float DeltaTime)
 	// keep updating the destination every tick while desired
 	if (bMoveToMouseCursor)
 	{
-		// MoveToMouseCursor();
+		MoveToMouseCursor();
 
 		FHitResult HitResult;
 		if (GetHitResultUnderCursor(ECC_Camera, true, HitResult))
@@ -31,19 +33,18 @@ void ABFME2TaskPlayerController::PlayerTick(float DeltaTime)
 			{
 				FVector MouseLocation, MouseDirection;
 				PlayerController->DeprojectMousePositionToWorld(MouseLocation, MouseDirection);
-				UE_LOG(LogTemp,Warning, TEXT("HIT X: %f, HIT Y: %f, HIT Z: %f"), MouseLocation.X, MouseLocation.Y, MouseLocation.Z);
-
 				float TraceLength = 1000.f;
 				FVector EndTraceLocation =  (MouseLocation -  PlayerController->PlayerCameraManager->GetCameraLocation()) * TraceLength;
 
 				// DrawDebugLine(GetWorld(), MouseLocation, EndTraceLocation, FColor{ 255,0,0 }, true, 100, 0, 1);
 				if (GetWorld()->LineTraceSingleByChannel(HitResult,MouseLocation, EndTraceLocation,ECC_Camera))
 				{
-					UE_LOG(LogTemp,Warning, TEXT("HIT"));
 					UE_LOG(LogTemp,Warning, TEXT("HIT OBJECT NAME: %s"), *HitResult.Actor->GetName());
-				
+					if (HitResult.Actor->GetName() == TEXT("BP_LumberMill_8"))
+					{
+						UE_LOG(LogTemp,Warning, TEXT("HIT CLASS NAME: %s"), *HitResult.GetActor()->GetClass()->GetName());
+					}
 				}
-
 			}
 		}
 	}

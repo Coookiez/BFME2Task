@@ -3,6 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "IconWidget.h"
+#include "UIComponent.h"
 #include "GameFramework/Actor.h"
 #include "LumberMill.generated.h"
 
@@ -24,5 +27,11 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere)
-	UUserWidget* IconWidget;
+	TSubclassOf<UIconWidget> IconWidget;
+
+	UPROPERTY(EditAnywhere)
+	UIconWidget* Icon;
+
+	UPROPERTY(VisibleAnywhere)
+	UUIComponent* UIComponent;
 };

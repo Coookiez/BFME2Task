@@ -6,10 +6,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="036c2a54-ee21-4f48-a598-01e3f93b9d21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_UIComponent.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Icon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/BFME2Task/IconWidgetComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/BFME2Task/IconWidgetComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/BFME2Task/UIComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/BFME2Task/UIComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_IconWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_IconWidget.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_LumberMill.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_LumberMill.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_Icon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_Icon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/BFME2TaskPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/BFME2TaskPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,15 +33,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Public/Blueprint/UserWidget.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Private/UserWidget.cpp" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Source/BFME2Task/BFME2TaskPlayerController.h" />
-      <option value="$PROJECT_DIR$/Source/BFME2Task/BFME2TaskPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/BFME2Task.Build.cs" />
-      <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" />
-      <option value="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/IconWidgetComponent.h" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/UIComponent.h" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/BFME2TaskPlayerController.cpp" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/IconWidget.cpp" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/UIComponent.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mZm5V44bG4p7cNjCA6ttURfD4q" />
@@ -41,6 +61,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -371,7 +393,8 @@
       <workItem from="1609716408433" duration="981000" />
       <workItem from="1609860990847" duration="851000" />
       <workItem from="1609876731595" duration="338000" />
-      <workItem from="1609877084681" duration="2142000" />
+      <workItem from="1609877084681" duration="9994000" />
+      <workItem from="1609889736767" duration="3095000" />
     </task>
     <servers />
   </component>
