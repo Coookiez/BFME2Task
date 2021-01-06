@@ -15,6 +15,7 @@ ABFME2TaskPlayerController::ABFME2TaskPlayerController()
 	DefaultMouseCursor = EMouseCursor::Crosshairs;
 	PlayerController = this;
 	bEnableClickEvents = true;
+	bEnableMouseOverEvents = true;
 }
 
 void ABFME2TaskPlayerController::PlayerTick(float DeltaTime)
@@ -34,15 +35,17 @@ void ABFME2TaskPlayerController::PlayerTick(float DeltaTime)
 				FVector MouseLocation, MouseDirection;
 				PlayerController->DeprojectMousePositionToWorld(MouseLocation, MouseDirection);
 				float TraceLength = 1000.f;
-				FVector EndTraceLocation =  (MouseLocation -  PlayerController->PlayerCameraManager->GetCameraLocation()) * TraceLength;
+				FVector EndTraceLocation = (MouseLocation - PlayerController->PlayerCameraManager->GetCameraLocation())
+					* TraceLength;
 
 				// DrawDebugLine(GetWorld(), MouseLocation, EndTraceLocation, FColor{ 255,0,0 }, true, 100, 0, 1);
-				if (GetWorld()->LineTraceSingleByChannel(HitResult,MouseLocation, EndTraceLocation,ECC_Camera))
+				if (GetWorld()->LineTraceSingleByChannel(HitResult, MouseLocation, EndTraceLocation, ECC_Camera))
 				{
-					UE_LOG(LogTemp,Warning, TEXT("HIT OBJECT NAME: %s"), *HitResult.Actor->GetName());
-					if (HitResult.Actor->GetName() == TEXT("BP_LumberMill_8"))
+					UE_LOG(LogTemp, Warning, TEXT("HIT OBJECT NAME: %s"), *HitResult.Actor->GetName());
+					UE_LOG(LogTemp, Warning, TEXT("HIT CLASS NAME: %s"), *HitResult.GetActor()->GetClass()->GetName());
+					if (*HitResult.GetActor()->GetClass()->GetName())
 					{
-						UE_LOG(LogTemp,Warning, TEXT("HIT CLASS NAME: %s"), *HitResult.GetActor()->GetClass()->GetName());
+						
 					}
 				}
 			}
@@ -74,7 +77,6 @@ void ABFME2TaskPlayerController::OnResetVR()
 
 void ABFME2TaskPlayerController::MoveToMouseCursor()
 {
-	
 	// UE_LOG(LogTemp, Warning, TEXT("XDDDDD CYLINDER"));
 
 	if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
