@@ -49020,6 +49020,8 @@
           <e p="LumberMill.h" t="Include" />
           <e p="UIComponent.cpp" t="Include" />
           <e p="UIComponent.h" t="Include" />
+          <e p="Worker.cpp" t="Include" />
+          <e p="Worker.h" t="Include" />
         </e>
         <e p="BFME2Task.Target.cs" t="Include" />
         <e p="BFME2TaskEditor.Target.cs" t="Include" />
