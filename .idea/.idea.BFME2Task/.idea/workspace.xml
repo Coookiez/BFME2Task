@@ -6,13 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="036c2a54-ee21-4f48-a598-01e3f93b9d21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Worker.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/BFME2Task/Worker.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/BFME2Task/Worker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFME2Task/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_LumberMill.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_LumberMill.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Icon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Icon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDownCPP/Maps/TopDownExampleMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" afterDir="false" />
@@ -29,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Public/Blueprint/UserWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Logging/LogMacros.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/StaticMeshComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Containers/CircularQueue.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Private/UserWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -42,8 +38,8 @@
       <option value="$PROJECT_DIR$/Source/BFME2Task/IconWidget.h" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/UIComponent.cpp" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/BFME2TaskPlayerController.cpp" />
-      <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" />
       <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.h" />
+      <option value="$PROJECT_DIR$/Source/BFME2Task/LumberMill.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mZm5V44bG4p7cNjCA6ttURfD4q" />
@@ -394,6 +390,9 @@
       <workItem from="1610221065972" duration="5160000" />
       <workItem from="1610237305725" duration="1999000" />
       <workItem from="1610241067084" duration="2022000" />
+      <workItem from="1610308189454" duration="2189000" />
+      <workItem from="1610322707292" duration="612000" />
+      <workItem from="1610485429565" duration="3854000" />
     </task>
     <servers />
   </component>

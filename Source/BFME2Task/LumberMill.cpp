@@ -3,7 +3,6 @@
 
 #include "LumberMill.h"
 #include <iostream>
-
 #include "BFME2TaskCharacter.h"
 
 // Sets default values
@@ -13,20 +12,43 @@ ALumberMill::ALumberMill()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
-void ALumberMill::SpawnWorker(UPrimitiveComponent*, FKey)
+void ALumberMill::SpawnWorker()
 {
-	FVector Location(0.0f, 0.0f, 265.588348f);
+	FVector MillLocation = GetActorLocation();
+	FVector Location(MillLocation.X - 130.f ,MillLocation.Y, 265.588348f);
 	FRotator Rotation(0.0f, 0.0f, 0.0f);
 	FActorSpawnParameters SpawnInfo;
 	GetWorld()->SpawnActor<AWorker>(ObjectToSpawn, Location, Rotation, SpawnInfo);
+	WorkerQueue->Dequeue();
+	UE_LOG(LogTemp, Warning, TEXT("dequeue # of elements:  %d"), WorkerQueue->Count());
+}
+
+void ALumberMill::PlaneOnClick(UPrimitiveComponent*, FKey)
+{
+	if (PlaneComponent->IsVisible())
+	{
+		WorkerQueue->Enqueue(NewObject<AWorker>());
+		UpdateWorkerQueueCounter();
+		UE_LOG(LogTemp, Warning, TEXT("# of elements:  %d"), WorkerQueue->Count());
+	}
+	// GetWorldTimerManager().SetTimer(MyTimerHandle, this, &ALumberMill::SpawnWorker, 2.f, false);
+}
+
+void ALumberMill::UpdateWorkerQueueCounter()
+{
+	if (WorkersQueueText != nullptr)
+	{
+		WorkersQueueText->SetText(FText::AsNumber(WorkerQueue->Count()));
+		UE_LOG(LogTemp, Warning, TEXT("WorkersQueueText NOT null, count %d"), WorkerQueue->Count());
+	}
 }
 
 // Called when the game starts or when spawned
 void ALumberMill::BeginPlay()
 {
 	Super::BeginPlay();
-	UIComponent = FindComponentByClass<UUIComponent>();
-
+	WorkersQueueText = FindComponentByClass<UTextRenderComponent>();
+	WorkerQueue = new TCircularQueue<AWorker*>(10);
 	TArray<UActorComponent*> Meshes = GetComponentsByClass(UStaticMeshComponent::StaticClass());
 	for (auto x : Meshes)
 	{
@@ -38,20 +60,24 @@ void ALumberMill::BeginPlay()
 	}
 	UE_LOG(LogTemp, Warning, TEXT("plane:  %s"), *PlaneComponent->GetName());
 
-	PlaneComponent->OnClicked.AddDynamic(this,  &ALumberMill::SpawnWorker);
-
-	if (UIComponent != nullptr)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Nie null"));
-		UIComponent->AddUIToViewport();
-	}
-	
+	PlaneComponent->OnClicked.AddDynamic(this, &ALumberMill::PlaneOnClick);
 }
-
 
 
 // Called every frame
 void ALumberMill::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+
+	if (WorkerQueue->Count() != 0)
+	{
+		if (TimeSinceLastWorkerSpawned >= WorkerSpawnTime)
+		{
+			SpawnWorker();
+			UpdateWorkerQueueCounter();
+			TimeSinceLastWorkerSpawned = 0.f;
+		}
+		TimeSinceLastWorkerSpawned += DeltaTime;
+	}
 }
